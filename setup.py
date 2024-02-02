@@ -11,7 +11,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "my_fastapi_project=VecDrean",
+            "VecDream=VecDream",
         ],
     },
     classifiers=[
