@@ -24,6 +24,7 @@ class VecDream():
         scores = {}
         query_vector =query_vector[0]
         for sentence,vector in self.vector_store.items():
-            scores[sentence] = manhattan_distance(query_vector,vector)
+            scores[sentence] = cosine_similarity(query_vector,vector)
+        print(scores)
         return sorted(scores.items(),key=lambda x:x[1],reverse=True)[:num_results]
     

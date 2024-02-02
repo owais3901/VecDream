@@ -34,6 +34,6 @@ query = ["The swift brown fox leaps over the lethargic dog."]
 
 query_vector = model.encode(query)
 
-print(client.askQuery(query_vector[0],num_results=3))
+print(client.askQuery(query_vector,num_results=3))
 
 print(time.time()-prev)
