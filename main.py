@@ -1,9 +1,12 @@
-from VecDream import VecDream
+# from VecDream import VecDream
+
+from sentence_transformers import SentenceTransformer
+# import VecDream
+
 
 client = VecDream()
 
 
-from sentence_transformers import SentenceTransformer
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 sentences = ['This framework generates embeddings for each input sentence',

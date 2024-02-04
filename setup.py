@@ -9,11 +9,7 @@ setup(
         "sentence_transformers",
         # Add other dependencies as needed
     ],
-    entry_points={
-        "console_scripts": [
-            "VecDream=VecDream",
-        ],
-    },
+    
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
