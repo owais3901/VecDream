@@ -1,18 +1,26 @@
-from setuptools import setup, find_packages
+from distutils.core import setup
 
 setup(
-    name="VecDream",
-    version="0.0.1",
-    packages=find_packages(),
+    name='VecDream',
+    packages=['VecDream'],
+    version='0.1',
+    license='MIT',
+    description='Basic Library',
+    author='Owais',
+    author_email='b19102090@gmail.com',
+    url='https://github.com/owais3901/VecDream.git',
+    keywords=['Vector Database'],
     install_requires=[
-        "numpy",
-        "sentence_transformers",
-        # Add other dependencies as needed
+        'sentence-transformers',
     ],
-    
+    python_requires='>=3.6',  # Requires any version >= 3.6
+
     classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
+        'Development Status :: 3 - Alpha',
+        # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
+        'Intended Audience :: Developers',
+        'Topic :: Software Development :: Build Tools',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3',  # Specify which pyhton versions that you want to support
     ],
 )

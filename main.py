@@ -2,7 +2,7 @@
 
 from sentence_transformers import SentenceTransformer
 # import VecDream
-
+from VecDream import VecDream
 
 client = VecDream()
 
