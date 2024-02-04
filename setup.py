@@ -2,7 +2,6 @@ from distutils.core import setup
 
 setup(
     name='VecDream',
-    packages=['VecDream'],
     version='0.1',
     license='MIT',
     description='Basic Library',
